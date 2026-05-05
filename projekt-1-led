@@ -1,0 +1,21 @@
+# Projekt 1: LED krug
+
+## Cilj
+Naučiti kako spojiti LED i zaštititi ju otpornikom.
+
+## Komponente
+- LED
+- otpornik 220Ω
+- breadboard
+- žice
+
+## Spoj
++5V → otpornik → LED → GND
+
+## Kako radi
+Struja prolazi kroz otpornik koji ograničava struju i štiti LED.
+
+## Što sam naučio
+- Ohmov zakon
+- polaritet LED
+- osnovni električni krug
