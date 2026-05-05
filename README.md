@@ -1,5 +1,5 @@
 # profile
-subcategories of skills
+
 
 # Elektrotehnika + AI + Cybersecurity Portfolio
 
