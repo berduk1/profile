@@ -14,8 +14,8 @@ Nauciti kako spojiti LED/diodu i zastititi je otpornikom.
 ## Spoj
 
 ```text
-+5 V -> otpornik 220 ohma -> LED/dioda -> 0 V / ground ```
-
++5 V -> otpornik 220 ohma -> LED/dioda -> 0 V / ground 
+```
 ## Izračun
 
 U_izvor = 5 V
