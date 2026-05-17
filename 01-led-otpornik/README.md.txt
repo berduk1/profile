@@ -44,3 +44,6 @@ Krug mora biti zatvoren.
 Mora postojati razlika potencijala, npr. +5 V prema 0 V.
 Otpornik ogranicava struju.
 LED/dioda se ne spaja direktno na izvor bez otpornika.
+
+## Slika simulacije 
+![LED/dioda + otpornik u Falstadu](slike/led-otpornik-falstad.png.png) 
