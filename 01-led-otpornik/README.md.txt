@@ -46,4 +46,4 @@ Otpornik ogranicava struju.
 LED/dioda se ne spaja direktno na izvor bez otpornika.
 
 ## Slika simulacije 
-![LED/dioda + otpornik u Falstadu](01-led-otpornik/slike/led-otpornik-falstad.png.png) 
+![LED/dioda + otpornik u Falstadu](slike/led-otpornik-falstad.png.png) 
