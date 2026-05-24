@@ -26,7 +26,8 @@ When the switch is opened, the voltage source is disconnected, but the capacitor
               │
           capacitor
               │
-             GND ```
+             GND
+```
 
 ## Slika simulacije
 ![LED RC switch circuit](images/led-rc-switch.png)
