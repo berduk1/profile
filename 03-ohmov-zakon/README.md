@@ -32,5 +32,6 @@ Veći napon povećava struju.
 Veći otpor smanjuje struju.  
 Ohmov zakon pokazuje osnovni odnos između napona, struje i otpora.
 
-FOTO: 
+## Slika simulacije
+![Falstad simulacija Ohmovog zakona](images/falstad-simulation-Ohm.png)
 
