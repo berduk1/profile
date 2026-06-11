@@ -45,3 +45,5 @@ Otpornici imaju dopuštenu snagu, npr. 0,25 W, 0,5 W, 1 W.
 
 ## Slika simulacije
 
+[!Falstad simulacija električne snage] (img/snaga.png) 
+
