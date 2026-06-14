@@ -93,7 +93,7 @@ To znači da lokalno računalo koristi jedan privremeni lokalni port i komunicir
 
 ## Slika vježbe
 
-![Portovi i netstat vježba](image/portovi-netstat.png)
+![Portovi i netstat vježba](image/port.png)
 
 ## Zaključak
 
