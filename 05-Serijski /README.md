@@ -17,7 +17,7 @@ Primjer spoja:
 ## Zadane vrijednosti
 
 ```text
-U = 10 V
+U = 15 V
 R1 = 1 kΩ
 R2 = 1 kΩ
 ```
@@ -38,8 +38,8 @@ Prema Ohmovom zakonu:
 
 ```text
 I = U / Ruk
-I = 10 V / 2000 Ω
-I = 0,005 A = 5 mA
+I = 15 V / 2000 Ω
+I = 0,0075 A = 7,5 mA
 ```
 
 ## Napon na otpornicima
@@ -66,5 +66,5 @@ Kroz sve otpornike teče ista struja.
 
 Ukupni napon izvora dijeli se na otpornike. Ako su otpornici jednaki, napon se dijeli jednako.
 
-U ovoj vježbi izvor napona bio je 10 V, a dva otpornika imala su po 1 kΩ. Ukupni otpor bio je 2 kΩ, a struja u krugu približno 5 mA.
+U ovoj vježbi izvor napona bio je 15 V, a dva otpornika imala su po 1 kΩ. Ukupni otpor bio je 2 kΩ, a struja u krugu približno 7,5 mA.
 
