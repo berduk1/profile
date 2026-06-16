@@ -55,9 +55,8 @@ UR2 ≈ 5 V
 
 ## Slika simulacije
 
-```markdown
 ![Serijski spoj otpornika](image/serijski.png)
-```
+
 
 ## Zaključak
 
