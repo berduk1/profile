@@ -27,4 +27,4 @@ Struja se dijeli.
 Ukupni otpor manji je od najmanjeg pojedinačnog otpora.
 
 ## Slika simulacije
-
+![Paralelni spoj otpornika](image/paralelni.png)
