@@ -49,27 +49,89 @@ Vout = 8 V
 
 ## Idealni izvori
 
-Idealni naponski izvor održava zadani napon, dok idealni strujni izvor održava zadanu struju.
+## Idealni naponski izvor
 
-### Naponski izvor
+Idealni naponski izvor održava zadani napon, dok se struja mijenja ovisno o priključenom otporu.
 
-```text
+Prvi primjer
 U = 10 V
 R = 1 kΩ
+
+Prema Ohmovu zakonu:
+
+I = U / R
+I = 10 V / 1000 Ω
 I = 10 mA
-```
+Drugi primjer
 
-![Idealni naponski izvor](image/ideal-voltage-source.png)
+Otpornik je promijenjen na:
 
-### Strujni izvor
+R = 2 kΩ
 
-```text
+Nova struja:
+
+I = 10 V / 2000 Ω
+I = 5 mA
+
+Napon je ostao jednak:
+
+U = 10 V
+Simulacija
+
+Zaključak
+
+Kod idealnog naponskog izvora napon ostaje konstantan, dok se struja mijenja ovisno o otporu opterećenja.
+
+veći otpor → manja struja
+manji otpor → veća struja
+
+## Idealni strujni izvor
+
+Idealni strujni izvor održava zadanu struju, dok se napon mijenja ovisno o priključenom otporu.
+
+Prvi primjer
 I = 5 mA
 R = 1 kΩ
-U = 5 V
-```
 
-![Idealni strujni izvor](image/ideal-current-source.png)
+Prema Ohmovu zakonu:
+
+U = I × R
+U = 0,005 A × 1000 Ω
+U = 5 V
+Drugi primjer
+
+Otpornik je promijenjen na:
+
+R = 2 kΩ
+
+Novi napon:
+
+U = 0,005 A × 2000 Ω
+U = 10 V
+
+Struja je ostala jednaka:
+
+I = 5 mA
+Simulacija
+
+Napomena o Groundu
+
+Simulacija je radila i bez posebnog Grounda jer je električni krug bio zatvoren.
+
+Ground služi kao referentna točka od 0 V. Bez Grounda krug može biti električki zatvoren, ali nema određen apsolutni napon prema referentnoj točki.
+
+Razlike napona između komponenti i struja kroz krug i dalje se mogu izračunati.
+
+![Idealni naponski izvor u Falstadu](images/naponski-izvor.png)
+
+![Idealni strujni izvor u Falstadu](images/strujni-izvor.png)
+
+## Zaključak
+
+Kod idealnog strujnog izvora struja ostaje konstantna, dok se napon mijenja ovisno o otporu opterećenja.
+
+veći otpor → veći napon
+manji otpor → manji napon
 
 ## Multimetar
 
