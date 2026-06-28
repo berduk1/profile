@@ -43,9 +43,9 @@ Vout = Vin × R2 / (R1 + R2)
 Vout = 8 V
 ```
 
-![Djelitelj napona u Falstadu](image/voltage-divider1.png)
+![Djelitelj napona u Falstadu](images/voltage-divider1.png)
 
-![Djelitelj napona u Falstadu](image/voltage-divider2.png)
+![Djelitelj napona u Falstadu](images/voltage-divider2.png)
 
 ## Idealni izvori
 
