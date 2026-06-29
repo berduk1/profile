@@ -13,4 +13,5 @@ Test-NetConnection example.com -Port 443
 curl -I http://example.com
 curl -I https://example.com
 
+![Test-NetConnection](images/https.png)
 
