@@ -45,6 +45,6 @@ I = 5 mA
 =
 5 mA izvor + 2 kΩ paralelni otpor
 
-![Naponski model realnog izvora](voltage-source-model.png)
+![Naponski model realnog izvora](07-realni-izvorni-transformacija/images/voltage-source-model.png)
 
-![Strujni model realnog izvora](current-source-model.png)
+![Strujni model realnog izvora](07-realni-izvorni-transformacija/images/current-source-model.png)
