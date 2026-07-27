@@ -200,7 +200,7 @@ Vload ≈ 4.8 V
 Iload ≈ 4.8 mA
 ```
 
-![Théveninov ekvivalent](images/thevenin-equivalent.png)
+![Théveninov ekvivalent](images/Thevenin-equivalent.png)
 
 ---
 
