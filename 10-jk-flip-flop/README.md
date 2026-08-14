@@ -355,6 +355,7 @@ The JK flip-flop was connected to three manually controlled Logic Inputs for J, 
 With J = HIGH and K = HIGH, changing the clock manually demonstrates the toggle behavior of the output Q.
 
 ![JK Flip-Flop with Manual Logic Inputs](screenshots/jk-flip-flop-logic-inputs.png)
+
 Push Button and Current Flow
 
 The button simulation helps visualize the change in the electrical path when the button changes state.
@@ -362,6 +363,7 @@ The button simulation helps visualize the change in the electrical path when the
 This corresponds to the Arduino button input, where pressing the button connects the input pin to GND when INPUT_PULLUP is used.
 
 ![Push Button and Current Flow](screenshots/button-current-flow.png)
+
 Arduino Toggle Code
 
 The Arduino implementation stores the LED state in the Boolean variable ledState and reverses it after each valid button press:
@@ -372,7 +374,9 @@ The new state is then applied to digital pin D8:
 
 digitalWrite(ledPin, ledState);
 ![Arduino Toggle Code](screenshots/arduino-toggle-code.png)
-Project Structure
+
+
+## Project Structure
 jk-flip-flop-toggle/
 │
 ├── README.md
