@@ -373,6 +373,7 @@ ledState = !ledState;
 The new state is then applied to digital pin D8:
 
 digitalWrite(ledPin, ledState);
+
 ![Arduino Toggle Code](screenshots/arduino-toggle-code.png)
 
 
