@@ -1,129 +1,95 @@
-Logika programa
-1. Analogni ulaz
-int sensorValue = analogRead(potPin);
 
-Arduino čita napon na A0.
+### GitHub README
 
-ADC pretvara napon u vrijednost:
+```markdown
+# Arduino Analog Threshold LED
 
-0–1023
+Simple Arduino project using a potentiometer as an analog input.
 
-Vrijednost se sprema u:
+The Arduino reads the potentiometer value and switches an LED ON or OFF
+depending on a predefined threshold.
 
-sensorValue
+## Components
 
-2. Serial Monitor
-Serial.begin(9600);
+- Arduino Uno
+- Breadboard
+- Potentiometer
+- LED
+- 220–330 Ω resistor
+- Jumper wires
 
-Pokreće serijsku komunikaciju između Arduina i računala.
+## Connections
 
-Serial.println(sensorValue);
+### Potentiometer
 
-Šalje trenutno očitanje u Serial Monitor.
+- Outer pin → 5V
+- Middle pin → A0
+- Outer pin → GND
 
-To omogućuje praćenje promjene vrijednosti potenciometra.
+### LED
 
-3. Threshold
+- D8 → resistor → LED → GND
 
-Koristimo prag:
+## Code
 
-500
+```cpp
+const int potPin = A0;
+const int ledPin = 8;
 
-if (sensorValue < 500)
-
-Ako je očitanje manje od 500:
-
-LED = ON
-
-Ako nije:
-
-LED = OFF
-
-if / else
-if (condition) {
-    action;
-} else {
-    otherAction;
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
 }
 
-U ovom projektu:
+void loop() {
+  int sensorValue = analogRead(potPin);
 
-sensorValue < 500 ?
-        |
-   +----+----+
-   |         |
-  YES        NO
-   |         |
- LED ON    LED OFF
-Tok sustava
+  Serial.println(sensorValue);
 
-Potenciometar
-↓
-promjenjivi napon
-↓
-A0
-↓
-analogRead()
-↓
+  if (sensorValue < 500) {
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+
+  delay(100);
+}
+
+How It Works
+
+The potentiometer produces a variable voltage that is read through A0.
+
+analogRead() converts the input into a value between:
+
 0–1023
-↓
-if / else
-↓
-D8
-↓
-LED ON / OFF
 
-Što potenciometar predstavlja?
+The program compares this value with a threshold of 500.
 
-U ovoj vježbi potenciometar glumi analogni senzor.
+value < 500  → LED ON
+value >= 500 → LED OFF
 
-Mi ručno mijenjamo ulazni signal.
+The current sensor value is also displayed in the Serial Monitor.
 
-Kasnije se potenciometar može zamijeniti stvarnim senzorom, npr.:
-
-LDR
-temperaturnim senzorom
-senzorom vlage
-drugim analognim senzorom
-
-Programska logika ostaje vrlo slična.
-
-Ključni pojmovi
+Main Concept
+Analog input
+    ↓
 analogRead()
-
-Čita analogni ulaz i vraća vrijednost 0–1023.
-
-if
-
-Izvršava naredbu ako je uvjet zadovoljen.
-
-else
-
-Izvršava alternativnu naredbu ako uvjet nije zadovoljen.
-
+    ↓
 threshold
+    ↓
+if / else
+    ↓
+digital output
 
-Granična vrijednost prema kojoj program donosi odluku.
+The potentiometer acts as a manually controlled analog sensor.
 
-Serial.begin(9600)
+A real analog sensor such as an LDR can later replace the potentiometer.
 
-Pokreće serijsku komunikaciju na 9600 baud.
-
-Serial.println()
-
-Šalje podatak računalu / Serial Monitoru.
-
-Što sam praktično napravio
-ponovno sam samostalno složio velik dio breadboard spojeva
-potenciometrom sam generirao analogni signal
-Arduino je očitao signal na A0
-program je usporedio očitanje s pragom
-LED se uključivala i isključivala ovisno o položaju potenciometra
-Glavna ideja
-
-Ova vježba predstavlja osnovni princip automatiziranog sustava:
-
-SENSOR / INPUT
-→ MEASUREMENT
-→ DECISION
-→ OUTPUT / ACTUATOR
+Learning Outcomes
+Analog input
+ADC values
+analogRead()
+if / else
+Threshold logic
+Serial communication
+Digital output control
