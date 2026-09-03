@@ -55,7 +55,7 @@ void loop() {
   delay(100);
 }
 
-How It Works
+## How It Works
 
 The potentiometer produces a variable voltage that is read through A0.
 
@@ -85,7 +85,7 @@ The potentiometer acts as a manually controlled analog sensor.
 
 A real analog sensor such as an LDR can later replace the potentiometer.
 
-Learning Outcomes
+## Learning Outcomes
 Analog input
 ADC values
 analogRead()
